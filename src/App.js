@@ -50,14 +50,15 @@ class App extends Component {
           distInfo={this.state.listDistricts}
           handleDistrictChange={this.handleDistrictChange}
         />
-        <Cards
-          data={this.state.data}
-          districtInfo={this.state.districtInfo}
-        />
         <Chart
           data={this.state.data}
           districtInfo={this.state.districtInfo}
         />
+        <Cards
+          data={this.state.data}
+          districtInfo={this.state.districtInfo}
+        />
+        
         <Footer />
       </div>
     );

@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .main-bg {
   background: url(./image/backgroung.jpeg);
   background-size: cover;
@@ -35,6 +36,9 @@ body {
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
 }
+.select {
+  padding: 1rem;
+}
 
 /* The typing effect */
 @keyframes typing {
@@ -49,15 +53,37 @@ body {
 }
 
 @media screen and (max-width: 883px) {
+
+  
+.main-bg {
+  background: url(./image/backgroung.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+  position: relative;
+}
+
   .typewriter p {
     color: black;
     font-family: monospace;
     white-space: pre-wrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
   }
+
+  /* The typing effect */
+@keyframes typing {
+  from { width: 100% }
+  to { width: 100% }
 }
 
-.select {
-  padding: 1rem;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
+}
+

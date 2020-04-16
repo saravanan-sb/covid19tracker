@@ -20,9 +20,20 @@ const Cards = (data) => {
     return (
         <div className="container">
             <div className="row">
+                
                 <div className="col s12 m4">
                     <div className="card">
-                        <div className="card-title align center">Quarentined</div>
+                        <div className="card-title align center">Confirmed</div>
+                        <div className="card-content">
+                            <h1 className='center align green-text'>
+                                <CountUp start={0} end={confirmed} duration={2.5} seperator=',' />
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div className="col s12 m4">
+                    <div className="card">
+                        <div className="card-title align center">Quarantined</div>
                         <div className="card-content">
                             {
                                 active === '0' ? (
@@ -33,16 +44,6 @@ const Cards = (data) => {
                                         </h1>
                                     )
                             }
-                        </div>
-                    </div>
-                </div>
-                <div className="col s12 m4">
-                    <div className="card">
-                        <div className="card-title align center">Confirmed</div>
-                        <div className="card-content">
-                            <h1 className='center align green-text'>
-                                <CountUp start={0} end={confirmed} duration={2.5} seperator=',' />
-                            </h1>
                         </div>
                     </div>
                 </div>
