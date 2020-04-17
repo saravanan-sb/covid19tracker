@@ -39,7 +39,6 @@ class App extends Component {
     this.setState({
       districtInfo: districtInfo
     })
-    console.log(this.state.districtInfo)
   }
 
   render() {

@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const url = 'https://api.covid19india.org/v2/state_district_wise.json'
+const url2 = 'https://api.covid19india.org/data.json'
 
 export const stateNames = async () => {
     try {
@@ -13,7 +14,7 @@ export const stateNames = async () => {
 
 export const stateInfo = async (state) => {
     try {
-        const { data: { statewise } } = await axios.get('https://api.covid19india.org/data.json')
+        const { data: { statewise } } = await axios.get(url2)
         const info = statewise.filter(stateInfo => {
             return stateInfo.state === state
         })
@@ -33,6 +34,15 @@ export const districtInfo = async (state) => {
             return stateInfo.state === state
         })
         return info[0].districtData;
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const fetchDailyData = async () => {
+    try {
+        const { data: { cases_time_series } } = await axios.get(url2);
+        return cases_time_series;
     } catch (error) {
         console.log(error)
     }

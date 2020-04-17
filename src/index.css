@@ -51,16 +51,49 @@ body {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+.countdelta {
+  font-size: 24px;
+}
+.last-update {
+  font-style: italic;
+  margin-left: 20px;
+}
+.counter{
+  display: flex;
+}
+
+/* -------------------------------------------------------------------------- */
+
 
 @media screen and (max-width: 763px) {
+  .last-update {
+    font-style: italic;
+    margin-left: 10px !important;
+  }
+  i {
+    font-size: 16px !important;
+  }
+  .countdelta {
+    font-size: 14px;
+  }
+
+  .card-content {
+    padding: 10px !important;
+  }
+
+  .cards {
+    padding: 1% !important;
+  }
   
 .count-text {
-  font-size: 1rem !important;
+  font-size: 1.3rem !important;
   font-weight: 400 !important;
 }
 
 .count {
-  font-size: 1.3rem !important;
+  padding-top: 10px !important;
+  margin: 10px 0 !important;
+  font-size: 1.8rem !important;
 }
   
 .main-bg {
