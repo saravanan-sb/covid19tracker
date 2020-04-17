@@ -41,12 +41,8 @@ const Chart = (data) => {
                         label: 'Confirmed',
                         borderColor: 'blue',
                         fill: true
-                    }, {
-                        data: dailyData.map(data => data.totalrecovered),
-                        label: 'Recovered',
-                        borderColor: 'green',
-                        fill: true
-                    }, {
+                    },
+                    {
                         data: dailyData.map(data => data.totaldeceased),
                         label: 'Deaths',
                         borderColor: 'red',
