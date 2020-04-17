@@ -52,8 +52,11 @@ body {
   50% { border-color: orange }
 }
 
-@media screen and (max-width: 883px) {
+@media screen and (max-width: 763px) {
 
+.count {
+  font-size: 1.3rem !important;
+}
   
 .main-bg {
   background: url(./image/backgroung.jpeg);

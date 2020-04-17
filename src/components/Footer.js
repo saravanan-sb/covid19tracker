@@ -11,9 +11,8 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col s12 l6">
-                        <h5>About me</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dicta, id officia quidem sed dolor
-          voluptatem deserunt beatae voluptatibus labore!</p>
+                        <h5>About the Site</h5>
+                        <p>This site provides the latest updates on the covid19 related information statewise and district wise. All data is provided by <a href='https://api.covid19india.org/'>(https://api.covid19india.org/)</a>.</p><p>The owner of this site is not responsible for incorrect data . Please check  <a href="https://www.covid19india.org/"> https://www.covid19india.org/</a> from more information.</p>
                     </div>
                     <div className="col s12 l4 offset-l2">
                         <h5>Connect</h5>

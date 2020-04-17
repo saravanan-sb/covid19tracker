@@ -18,28 +18,28 @@ const Cards = (data) => {
 
     if (!active) return null
     return (
-        <div className="container">
+        <div className="container s12 m12">
             <div className="row">
-                
-                <div className="col s12 m4">
+            
+                <div className="col s4 m4">
                     <div className="card">
-                        <div className="card-title align center">Confirmed</div>
+                        <div className="card-title align center count">Confirmed</div>
                         <div className="card-content">
-                            <h1 className='center align green-text'>
+                            <h1 className='center align green-text count'>
                                 <CountUp start={0} end={confirmed} duration={2.5} seperator=',' />
                             </h1>
                         </div>
                     </div>
                 </div>
-                <div className="col s12 m4">
+                <div className="col s4 m4">
                     <div className="card">
-                        <div className="card-title align center">Quarantined</div>
+                        <div className="card-title align center count">Quarantined</div>
                         <div className="card-content">
                             {
                                 active === '0' ? (
-                                    <h1 className='center align blue-text'>NA</h1>
+                                    <h1 className='center align blue-text count'>NA</h1>
                                 ) : (
-                                        <h1 className='center align blue-text'>
+                                        <h1 className='center align blue-text count'>
                                             <CountUp start={0} end={parseInt(active)} duration={2.5} seperator=',' />
                                         </h1>
                                     )
@@ -47,15 +47,15 @@ const Cards = (data) => {
                         </div>
                     </div>
                 </div>
-                <div className="col s12 m4">
+                <div className="col s4 m4">
                     <div className="card">
-                        <div className="card-title align center">Deaths</div>
+                        <div className="card-title align center count">Deaths</div>
                         <div className="card-content">
                             {
                                 active === '0' ? (
-                                    <h1 className='center align red-text'>NA</h1>
+                                    <h1 className='center align red-text count'>NA</h1>
                                 ) : (
-                                        <h1 className='center align red-text'>
+                                        <h1 className='center align red-text count' >
                                             <CountUp start={0} end={parseInt(deaths)} duration={2.5} seperator=',' />
                                         </h1>
                                     )
