@@ -23,7 +23,7 @@ const Cards = (data) => {
             
                 <div className="col s4 m4">
                     <div className="card">
-                        <div className="card-title align center count">Confirmed</div>
+                        <div className="card-title align center count-text">Confirmed</div>
                         <div className="card-content">
                             <h1 className='center align green-text count'>
                                 <CountUp start={0} end={confirmed} duration={2.5} seperator=',' />
@@ -33,7 +33,7 @@ const Cards = (data) => {
                 </div>
                 <div className="col s4 m4">
                     <div className="card">
-                        <div className="card-title align center count">Quarantined</div>
+                        <div className="card-title align center count-text">Quarantined</div>
                         <div className="card-content">
                             {
                                 active === '0' ? (
@@ -49,7 +49,7 @@ const Cards = (data) => {
                 </div>
                 <div className="col s4 m4">
                     <div className="card">
-                        <div className="card-title align center count">Deaths</div>
+                        <div className="card-title align center count-text">Deaths</div>
                         <div className="card-content">
                             {
                                 active === '0' ? (
