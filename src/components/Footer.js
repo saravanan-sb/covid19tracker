@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-copyright grey darken-4">
-                <div className="container center-align">© 2020 YesBee  <i class="fab fa-forumbee"></i></div>
+                <div className="container center-align">© 2020 YesBee  <i className="fab fa-forumbee"></i></div>
             </div>
         </footer>
     )

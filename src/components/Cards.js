@@ -11,12 +11,12 @@ const Cards = (data) => {
     let deltaDeaths = '';
 
     if (data.districtInfo && data.districtInfo[0]) {
-        deltaDeaths = '0'
-        deltaRecovered = '0'
+        deltaDeaths = 0
+        deltaRecovered = 0
         deltaConfirmed = data.districtInfo[0].delta.confirmed;
-        recovered = '0'
+        recovered = 0
         confirmed = data.districtInfo[0].confirmed;
-        deaths = '0'
+        deaths = 0
     } else {
         deltaDeaths = data.data.deltadeaths;
         deltaRecovered = data.data.deltarecovered;
@@ -54,7 +54,7 @@ const Cards = (data) => {
                         <div className="card-content">
                             <div >
                                 {
-                                    deltaRecovered === '0' ? (
+                                    deltaRecovered === 0 ? (
                                         <p className='center align green-text countdelta'>NA</p>
                                     ) : (
                                             <p className='align center green-text darken-4 countdelta'>
@@ -65,7 +65,7 @@ const Cards = (data) => {
                                 }
                             </div>
                             {
-                                recovered === '0' ? (
+                                recovered === 0 ? (
                                     <h1 className='center align green-text count'>NA</h1>
                                 ) : (
                                         <h1 className='center align green-text count'>
@@ -82,7 +82,7 @@ const Cards = (data) => {
                         <div className="card-content">
                             <div >
                                 {
-                                    deltaRecovered === '0' ? (
+                                    deltaRecovered === 0 ? (
                                         <p className='center align red-text countdelta'>NA</p>
                                     ) : (
                                             <p className='align center red-text darken-4 countdelta'>
@@ -94,7 +94,7 @@ const Cards = (data) => {
 
                             </div>
                             {
-                                recovered === '0' ? (
+                                recovered === 0 ? (
                                     <h1 className='center align red-text count'>NA</h1>
                                 ) : (
                                         <h1 className='center align red-text count' >
