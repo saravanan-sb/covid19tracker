@@ -23,9 +23,9 @@ const Footer = () => {
                             }
                         </ul>
                         <div className='counter'>
-                            <a href="https://www.hitwebcounter.com" rel="noopener noreferrer" target="_blank">
+                            {/* <a href="https://www.hitwebcounter.com" rel="noopener noreferrer" target="_blank">
                                 <img src="https://hitwebcounter.com/counter/counter.php?page=7277301&style=0010&nbdigits=4&type=page&initCount=43" title="User Stats" alt=" Hits Count" border={0} />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
