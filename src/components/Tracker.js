@@ -6,7 +6,8 @@ const Tracker = ({ handleStateChange, distInfo, handleDistrictChange }) => {
 
     useEffect(() => {
         const data = async () => {
-            setstate(await stateNames());
+            const sortState = await stateNames();
+            setstate(sortState.sort());
         }
         data()
     }, [setstate])
