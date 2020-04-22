@@ -4,7 +4,7 @@ const Footer = () => {
     const links = [
         { link: 'https://www.facebook.com/the.yesbee', name: 'facebook' },
         { link: 'https://www.linkedin.com/in/saravanan-sb/', name: 'linkedIn' },
-        { link: 'https://www.github.com/saravanansb96', name: 'Github' }
+//         { link: 'https://www.github.com/saravanansb96', name: 'Github' }
     ]
     return (
         <footer className="page-footer grey darken-3">
